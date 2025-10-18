@@ -1,0 +1,95 @@
+:root {
+  --primary-color: #3783f4;
+  --secondary-color: #ffffff;
+  --button-color: #13a44d;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  min-height: 1000vh;
+}
+
+/* HEADER START */
+
+header {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem 2%;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-container .logo-section {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.header-container .logo-section .icon-wrapper {
+  background-color: var(--primary-color);
+  padding: 0.5rem;
+  border-radius: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-container .logo-section .icon-wrapper svg {
+  width: 25px;
+  height: 25px;
+  stroke: white; /* biar icon-nya tetap kelihatan */
+}
+
+.header-container .logo-section h1 {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.header-container .nav-container ul {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.header-container .nav-container ul li a {
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all ease-in-out 0.3s;
+}
+
+.header-container .nav-container ul li a:hover {
+  color: var(--primary-color);
+}
+
+.header-container .button-container a {
+  background-color: var(--button-color);
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 12px 18px;
+  color: var(--secondary-color);
+  border-radius: 10px;
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+}
+
+.header-container .button-container a:hover {
+  background-color: #17b655;
+}
