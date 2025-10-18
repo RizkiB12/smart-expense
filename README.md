@@ -3,8 +3,8 @@ Deskripsi
 
 Proyek ini dibuat untuk menyelesaikan tugas akhir kelas Belajar Dasar Pemrograman Web di Dicoding.
 Website dibuat menggunakan HTML, CSS, dan JavaScript tanpa framework seperti Bootstrap atau Materialize.
-Desain website mengikuti rancangan yang dibuat di Eraser:
-Link Desain
+Desain website mengikuti rancangan yang dibuat di 
+🔗 [Lihat Desain di Eraser](https://app.eraser.io/workspace/gwwDyDbecMrs6iUwr3CC?origin=share)
 
 ## Struktur Website
 
