@@ -1,4 +1,4 @@
-# Tugas Akhir: Membuat Website
+# Tugas Akhir Dicoding: Membuat Website
 Deskripsi
 
 Proyek ini dibuat untuk menyelesaikan tugas akhir kelas Belajar Dasar Pemrograman Web di Dicoding.
