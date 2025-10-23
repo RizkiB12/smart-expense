@@ -3,6 +3,7 @@
   --secondary-color: #ffffff;
   --paragraf-color: #8e9296;
   --button-color: #13a44d;
+  --bg-icon-color: #f1f5f9;
 }
 
 * {
@@ -239,3 +240,135 @@ header {
   max-width: 650px;
   border-radius: 1rem;
 }
+
+/* HOME END */
+
+/* TIPS START */
+
+.tips {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2% 1rem 2%;
+}
+
+.tips .tips-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.tips .tips-container .tips-title {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+
+.tips .tips-container .tips-title h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.tips .tips-container .tips-title p {
+  color: var(--paragraf-color);
+  font-size: 1.2rem;
+  line-height: 1.4;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ===== Card Container ===== */
+.tips-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1100px;
+  gap: 2rem;
+}
+
+/* ===== Individual Card ===== */
+.tips-card .card {
+  flex: 1 1 40%;
+  background-color: #fff;
+  border: solid 2px #e8edf3;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.tips-card .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== Icon & Title (bagian atas card) ===== */
+.tips-card .card > div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tips-card .icon-wrap {
+  width: 50px;
+  height: 50px;
+  background-color: var(--bg-icon-color); /* abu lembut */
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Icon (SVG) bawaan Lucide */
+.tips-card .icon-wrap svg {
+  width: 24px;
+  height: 24px;
+  stroke-width: 2.2;
+}
+
+/* Title */
+.tips-card .card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Description */
+.tips-card .card p {
+  color: var(--paragraf-color);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* ===== Icon Colors per Card ===== */
+
+.tips-card .card:nth-child(1) i {
+  background-color: #eff6ff;
+}
+.tips-card .card:nth-child(2) i {
+  background-color: #ecfdf5;
+}
+.tips-card .card:nth-child(3) i {
+  background-color: #f0fdfa;
+}
+.tips-card .card:nth-child(4) i {
+  background-color: #fef2f2;
+}
+
+.tips-card .card:nth-child(1) svg {
+  stroke: #3b82f6;
+}
+.tips-card .card:nth-child(2) svg {
+  stroke: #10b981;
+}
+.tips-card .card:nth-child(3) svg {
+  stroke: #14b8a6;
+}
+.tips-card .card:nth-child(4) svg {
+  stroke: #ef4444;
+}
+
+/* TIPS END */
