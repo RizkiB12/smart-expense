@@ -346,16 +346,16 @@ header {
 /* ===== Icon Colors per Card ===== */
 
 .tips-card .card:nth-child(1) i {
-  background-color: #eff6ff;
+  background-color: #f1f5f9;
 }
 .tips-card .card:nth-child(2) i {
-  background-color: #ecfdf5;
+  background-color: #f1f5f9;
 }
 .tips-card .card:nth-child(3) i {
-  background-color: #f0fdfa;
+  background-color: #f1f5f9;
 }
 .tips-card .card:nth-child(4) i {
-  background-color: #fef2f2;
+  background-color: #f1f5f9;
 }
 
 .tips-card .card:nth-child(1) svg {
@@ -372,3 +372,220 @@ header {
 }
 
 /* TIPS END */
+
+/* ABOUT RULES START */
+
+aside.about {
+  margin-top: 5rem;
+}
+/* ===== 50/30/20 RULE SECTION ===== */
+.rules-container {
+  background-color: #f4fbfc; /* lembut banget, mendekati contoh */
+  border-radius: 12px;
+  padding: 2rem 2.5rem;
+  max-width: 800px;
+  margin: 3rem auto;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
+  border: 1px solid #e5e7eb;
+}
+
+/* ===== Title ===== */
+.rules-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.75rem;
+}
+
+/* ===== Description ===== */
+.rules-description {
+  color: #6b7280;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* ===== Rules List ===== */
+.rules-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* ===== Each Rule ===== */
+.rule-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  font-size: 1rem;
+  color: #374151;
+}
+
+/* ===== Percent Badge ===== */
+.rule-percent {
+  font-weight: 700;
+  font-size: 1rem;
+  min-width: 45px;
+}
+
+.rule-percent.fifty {
+  color: #2563eb; /* biru */
+}
+
+.rule-percent.thirty {
+  color: #10b981; /* hijau */
+}
+
+.rule-percent.twenty {
+  color: #14b8a6; /* teal */
+}
+
+/* ===== Text beside percent ===== */
+.rule-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.rule-category {
+  color: #65758b;
+}
+
+.rule-category strong {
+  font-weight: 700;
+}
+
+.rule-details {
+  color: #6b7280;
+}
+
+/* === PROFILE SECTION === */
+.profile-container {
+  display: flex;
+  align-items: stretch;
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.09);
+  margin: 5rem auto 0 auto;
+  max-width: 900px;
+  border: 2px solid #e2e8ef;
+}
+
+/* === LEFT SIDE (PHOTO AREA) === */
+.profile-image-wrapper {
+  background-color: #eaf5fb; /* biru muda lembut */
+  flex: 0 0 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.profile-image {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ffffff; /* bingkai putih halus */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* === RIGHT SIDE (CONTENT AREA) === */
+.profile-content {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 40px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Header (nama + title) */
+.profile-header {
+  margin-bottom: 20px;
+}
+
+.profile-name {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #1b1b1b;
+  margin: 0;
+}
+
+.profile-title {
+  font-size: 1rem;
+  color: #5a5a5a;
+  margin-top: 4px;
+}
+
+/* Bio */
+.profile-bio {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+/* === Feature List === */
+.profile-features-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.feature-icon {
+  background-color: #f1f5f9;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+/* === Individual Icon Background Colors === */
+.feature-item:nth-child(1) .feature-icon {
+  color: #2563eb; /* blue for award */
+}
+
+.feature-item:nth-child(2) .feature-icon {
+  color: #22c55e; /* green for users */
+}
+
+.feature-item:nth-child(3) .feature-icon {
+  color: #ef4444; /* red for heart */
+}
+
+/* === Icon Size (Lucide SVG) === */
+.feature-item .feature-icon svg {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2; /* bikin ikon lebih tebal */
+}
+
+.feature-text-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-title {
+  font-weight: 600;
+  color: #1b1b1b;
+}
+
+.feature-description {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* ABOUT RULES END */
