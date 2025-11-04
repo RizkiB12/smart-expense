@@ -20,7 +20,7 @@ html {
 
 body {
   font-family: "Inter", sans-serif;
-  min-height: 1000vh;
+  /* min-height: 1000vh; */
 }
 
 /* HEADER START */
@@ -246,15 +246,17 @@ header {
 /* TIPS START */
 
 .tips {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 2% 1rem 2%;
+  background-color: #f6f9fa;
+  padding: 5rem 0;
 }
 
 .tips .tips-container {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2% 1rem 2%;
 }
 
 .tips .tips-container .tips-title {
@@ -376,8 +378,9 @@ header {
 /* ABOUT RULES START */
 
 aside.about {
-  margin-top: 5rem;
-  margin-bottom: 1rem;
+  /* margin-top: 5rem;
+  margin-bottom: 1rem; */
+  background-color: #f6f9fa;
 }
 /* ===== 50/30/20 RULE SECTION ===== */
 .rules-container {
@@ -385,7 +388,7 @@ aside.about {
   border-radius: 12px;
   padding: 2rem 2.5rem;
   max-width: 800px;
-  margin: 3rem auto;
+  margin: 0 auto;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
   border: 1px solid #e5e7eb;
 }
@@ -444,7 +447,6 @@ aside.about {
   color: #14b8a6; /* teal */
 }
 
-/* ===== Text beside percent ===== */
 .rule-content {
   display: flex;
   flex-wrap: wrap;
@@ -595,7 +597,7 @@ aside.about {
 
 .testimonials {
   background-color: #f6f8fa;
-  height: 80vh;
+  height: 70vh;
 }
 
 .testimonials .testimonial-container {
@@ -622,10 +624,6 @@ aside.about {
   font-size: 1rem;
 }
 
-/* =====================================
-  LIST PENAMPUNG (Grid-nya)
-  ===================================== 
-*/
 .testimonial-list {
   margin-top: 2.5rem;
 
@@ -646,10 +644,6 @@ aside.about {
   justify-content: center; /* Menengahkan kartu jika 'wrap' */
 }
 
-/* =====================================
-  KARTU TESTIMONI (Tiap Item)
-  ===================================== 
-*/
 .testimonial-card {
   /* Memberi gaya 'kartu' seperti di gambar */
   background-color: #ffffff;
@@ -740,3 +734,154 @@ aside.about {
 }
 
 /* TESTIMONIAL END */
+
+/* FOOTER START */
+
+footer {
+  color: #4b5563; /* Warna teks abu-abu */
+  padding: 48px 0; /* Jarak atas-bawah */
+  border-top: 1px solid #e5e7eb; /* Garis tipis di atas footer */
+  font-family: system-ui, sans-serif;
+}
+
+.footer-container {
+  max-width: 1400px; /* Batas lebar konten */
+  margin: 0 auto; /* Menengahkan di halaman */
+  padding: 1rem 2%; /* Jarak kiri-kanan */
+}
+
+.footer-up {
+  display: flex;
+  justify-content: space-between; /* Kunci: Menyebar 4 kolom */
+  flex-wrap: wrap; /* Izinkan turun ke bawah di layar kecil */
+  gap: 32px; /* Jarak antar kolom jika 'wrap' */
+  margin-bottom: 32px;
+}
+
+/* --- Kolom 1: Logo, Teks, Sosial Media --- */
+.footer-logo-section {
+  /* Mengambil lebih banyak ruang, misal 40% */
+  flex: 1 1 300px;
+  margin-right: 24px; /* Jarak ke kolom link */
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none; /* Menghilangkan garis bawah link */
+  margin-bottom: 16px;
+}
+
+.footer-logo .icon-wrapper {
+  background-color: #3b82f6; /* Latar biru */
+  color: #ffffff; /* Ikon putih */
+  padding: 8px;
+  border-radius: 8px;
+  display: inline-flex;
+}
+.footer-logo strong {
+  font-size: 1.25rem; /* 20px */
+  font-weight: 700;
+  color: #111827; /* Hitam */
+}
+
+.footer-logo-section > p {
+  font-size: 0.9rem; /* 14px */
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.social-media {
+  display: flex;
+  gap: 16px;
+}
+.social-media a {
+  background-color: #f1f5f9; /* Background awal */
+  color: #6b7281; /* Warna ikon awal (abu-abu) */
+  border-radius: 8px;
+  padding: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+.social-media a:hover {
+  background-color: #3c84f6; /* 1. Background biru saat hover */
+  color: #ffffff; /* 2. Warna ikon jadi PUTIH (agar kontras) */
+}
+
+/* --- Kolom 2, 3, 4: Kolom Link --- */
+.footer-links {
+  /* Mengambil sisa ruang secara merata */
+  flex: 1 1 150px;
+}
+
+.footer-links h3 {
+  font-size: 1rem; /* 16px */
+  font-weight: 600;
+  color: #111827; /* Hitam */
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #4b5563; /* Abu-abu */
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+.footer-links a:hover {
+  color: #111827; /* Hitam */
+}
+
+/* Opsional: Garis pemisah */
+.footer-container hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 32px 0;
+}
+
+.footer-down {
+  display: flex;
+  justify-content: space-between; /* Kunci: Kiri dan Kanan */
+  align-items: center;
+  flex-wrap: wrap; /* Turun di layar kecil */
+  gap: 16px;
+  font-size: 0.875rem; /* 14px */
+  color: #6b7281;
+}
+
+.footer-left p {
+  margin: 0;
+}
+
+.footer-right ul {
+  display: flex;
+  gap: 24px; /* Jarak antar link bawah */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-right a {
+  text-decoration: none;
+  color: #6b7281;
+  transition: color 0.2s ease;
+}
+.footer-right a:hover {
+  color: #111827;
+}
+
+/* FOOTER END */
