@@ -634,7 +634,6 @@ aside.about {
   /* 1. Mengatur kartu-kartu (<li>) agar berbaris ke samping */
   display: flex;
 
-  /* 2. Memberi jarak antar kartu (sesuai pertanyaan Anda) */
   gap: 24px; /* Anda bisa sesuaikan nilainya, misal 1.5rem */
 
   /* 3. Menghilangkan bullet points dari <ul> */
@@ -643,7 +642,6 @@ aside.about {
   /* 4. Menghilangkan padding default dari <ul> */
   padding-left: 0;
 
-  /* (Opsional) Jika di layar kecil, buat kartu turun ke bawah */
   flex-wrap: wrap;
   justify-content: center; /* Menengahkan kartu jika 'wrap' */
 }
@@ -656,21 +654,11 @@ aside.about {
   padding: 24px; /* Jarak dari tepi kartu ke konten di dalam */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Bayangan halus */
 
-  /* Menggunakan flex column agar item di dalam kartu 
-    (ikon, bintang, teks, hr, user) tersusun vertikal.
-  */
   display: flex;
   flex-direction: column;
 
-  /* Ini trik agar ketiga kartu punya tinggi yang sama 
-    meskipun panjang teksnya berbeda.
-  */
   height: 100%;
 
-  /* Mengatur lebar kartu. 
-    flex-basis: 300px; -> Lebar awal kartu
-    flex-grow: 1;     -> Izinkan kartu membesar jika ada ruang
-  */
   flex-basis: 300px;
   flex-grow: 1;
   max-width: 360px; /* Batas lebar maksimum per kartu */
@@ -725,7 +713,6 @@ aside.about {
   margin: 16px 0;
 }
 
-/* Info pengguna (Michael Chen) */
 .testimonial-user .user-name {
   font-weight: 600; /* Sedikit tebal */
   color: #111827; /* Hitam */
