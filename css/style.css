@@ -26,28 +26,30 @@ body {
 /* HEADER START */
 
 header {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 1rem 2%;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #f9fafb;
   backdrop-filter: blur(6px);
-  /* background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.9),
-    rgba(255, 255, 255, 0.6)
-  );
-  backdrop-filter: blur(6px); */
+  transition: background-color 0.3s ease-out, box-shadow 0.3s ease-out,
+    backdrop-filter 0.3s ease-out;
   z-index: 99999;
+}
+
+header.header-scrolled {
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(6px);
 }
 
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem 2%;
 }
 
 .header-container .logo-section {
@@ -74,6 +76,7 @@ header {
 .header-container .logo-section h1 {
   font-weight: 600;
   font-size: 1.4rem;
+  color: #000000;
 }
 
 .header-container .nav-container ul {
@@ -112,13 +115,14 @@ header {
 /* HOME START  */
 
 .home {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 15rem 2% 0 2%;
+  background-color: #f9fafb;
   height: 100vh;
 }
 
 .home .home-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 15rem 2% 0 2%;
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -382,7 +386,7 @@ aside.about {
   margin-bottom: 1rem; */
   background-color: #f6f9fa;
 }
-/* ===== 50/30/20 RULE SECTION ===== */
+
 .rules-container {
   background-color: #f4fbfc;
   border-radius: 12px;
